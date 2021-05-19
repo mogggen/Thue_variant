@@ -8,8 +8,8 @@ def run(path):
             i = h.pop(0).strip("\n")
             if i == "::=":
                 break
-            if ":::=" in i:
-                left = i.split(":::=")[0]
+            if ":::" in i:
+                left = i.split(":::")[0]
                 right = input()
             else:
                 left, right = i.split("::=")
